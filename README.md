@@ -6,3 +6,4 @@ Both `/test/base` and `/test/own` are expected to return 400 instead for missing
 
 ### Actual
 `/test/base` reutns 200
+![image](https://user-images.githubusercontent.com/6978458/144517082-dd757220-a453-49e6-8766-4f421db033cd.png)
