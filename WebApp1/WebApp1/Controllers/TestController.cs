@@ -6,6 +6,9 @@ namespace WebApp1.Controllers
     [Route("[controller]")]
     public abstract class TestControllerBase : ControllerBase
     {
+        // This method leads to failing nullable ref validation
+        protected ObjectResult StatusCode(int statusCode, string detail) => Problem(detail, statusCode: statusCode);
+        
         [HttpGet("base")]
         public IActionResult GetBase(string value)
         {
